@@ -1,0 +1,124 @@
+
+# ==========================================
+# Python
+# ==========================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python build and distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+
+.venv/
+venv/
+env/
+ENV/
+
+# ==========================================
+# Jupyter Notebook
+# ==========================================
+
+.ipynb_checkpoints/
+
+# ==========================================
+# Data Files
+# ==========================================
+
+# Original downloaded datasets
+data/raw/*
+
+# Generated intermediate datasets
+data/interim/*
+
+# Generated processed datasets
+data/processed/*
+
+# Preserve directory structure
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# ==========================================
+# NLP Models and Large Files
+# ==========================================
+
+*.model
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Sentence Transformers cache
+.sentence_transformers/
+
+# Hugging Face cache
+.cache/
+models/
+
+# ==========================================
+# Environment Variables and Secrets
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# IDE and Editor Files
+# ==========================================
+
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ==========================================
+# Operating System Files
+# ==========================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Logs and Temporary Files
+# ==========================================
+
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# ==========================================
+# Streamlit
+# ==========================================
+
+.streamlit/secrets.toml
+
+# Stanford CoreNLP dependencies
+openie_resources/stanford-corenlp-4.5.3/
+
+# ==========================================
+# Testing and Coverage
+# ==========================================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/

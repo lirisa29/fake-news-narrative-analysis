@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "narrative-analysis"
+version = "0.1.0"
+description = "Fake news narrative analysis"
+requires-python = ">=3.12"
+
+dependencies = [
+    # Data processing
+    "pandas",
+    "numpy",
+    "openpyxl",
+
+    # Natural language processing
+    "spacy",
+    "coreferee",
+    "nltk",
+    "sumy",
+    "beautifulsoup4",
+    "lxml",
+
+    # Information extraction
+    "stanford-openie",
+
+    # Entity resolution
+    "rapidfuzz",
+
+    # Semantic similarity and embeddings
+    "sentence-transformers",
+    "scikit-learn",
+
+    # Knowledge graph construction
+    "networkx",
+
+    # Dashboard and visualisation
+    "streamlit",
+    "pyvis"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
