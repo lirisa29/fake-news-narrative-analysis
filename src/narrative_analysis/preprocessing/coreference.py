@@ -25,6 +25,16 @@ def run_coreference_preprocessor(raw_text: str) -> str:
                 if antecedents and len(antecedents) == 1:
                     replacement = antecedents[0].text
 
+                    for chunk in doc.noun_chunks:
+
+                        if (
+                            chunk.start <= antecedents[0].i
+                            < chunk.end
+                        ):
+
+                            replacement = chunk.text
+                            break
+
             except (IndexError, ValueError, TypeError):
                 pass
 

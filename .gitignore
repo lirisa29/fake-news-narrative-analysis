@@ -44,10 +44,14 @@ data/interim/*
 # Generated processed datasets
 data/processed/*
 
+# Generated evaluation datasets
+data/evaluation/*
+
 # Preserve directory structure
 !data/raw/.gitkeep
 !data/interim/.gitkeep
 !data/processed/.gitkeep
+!data/evaluation/.gitkeep
 
 # ==========================================
 # NLP Models and Large Files

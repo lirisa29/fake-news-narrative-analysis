@@ -1,18 +1,18 @@
-# Designing & Evaluating an Interactive Narrative Analytics Framework for Fake News
+# Designing & Evaluating an Interactive Knowledge Graph for Fake News Narrative Analysis
 
 ## Overview
 
-This repository contains the implementation of an Interactive Narrative Analytics (INA) framework developed as part of an Honours degree thesis.
+This repository contains the implementation of a pipeline to develop an interactive knowledge graph developed as part of an Honours degree thesis.
 
 The project investigates how automated Open Information Extraction (OpenIE), natural language processing (NLP), and interactive network visualisation can be combined to support the analysis of fake news narratives across multiple sources and over time.
 
-The framework transforms unstructured fake news articles into structured narrative triplets consisting of a **Subject, Relation, and Object (SRO)**. These triplets are processed, refined, and represented as an interactive knowledge graph, allowing analysts to explore relationships between entities, examine supporting evidence, and investigate how narratives appear across different news sources and publication dates.
+The pipeline transforms unstructured fake news articles into structured narrative triplets consisting of a **Subject, Relation, and Object (SRO)**. These triplets are processed, refined, and represented as an interactive knowledge graph, allowing analysts to explore relationships between entities, examine supporting evidence, and investigate how narratives appear across different news sources and publication dates.
 
 ---
 
-## Framework Architecture
+## Pipeline Architecture
 
-The framework follows a sequential processing architecture, transforming raw fake news articles into an interactive narrative knowledge graph.
+The pipeline follows a sequential processing architecture, transforming raw fake news articles into an interactive narrative knowledge graph.
 
 ```text
                  RAW FAKE NEWS DATASETS
@@ -224,7 +224,7 @@ Several considerations apply when using the framework:
 * The temporal analysis depends on the availability and accuracy of article publication dates.
 * The dashboard is intended for exploratory analysis rather than automated fact-checking.
 
-These limitations are important when interpreting the extracted relationships and using the framework for narrative analysis.
+These limitations are important when interpreting the extracted relationships and using the dashboard for narrative analysis.
 
 ---
 

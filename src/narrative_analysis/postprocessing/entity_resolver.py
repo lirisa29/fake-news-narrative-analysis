@@ -21,15 +21,6 @@ class EntityResolver:
         ]:
             return "UNRESOLVED"
 
-        # Substring / containment matching.
-        for existing_name in self.canonical_map.values():
-
-            if (
-                name_clean.lower() in existing_name.lower()
-                or existing_name.lower() in name_clean.lower()
-            ):
-                return existing_name
-
         # Fuzzy matching.
         for raw_name, canonical in self.canonical_map.items():
 
